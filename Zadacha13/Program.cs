@@ -10,14 +10,12 @@ int Input(string text)
 int number = new Random().Next();
 // int number = Input("Введите любое число: ");
 Console.WriteLine($"Случайное число = {number}");
-int count = 10;
-while (number > 999)
-{
-    number = number / count;
-    count = count * 1;
-}
 if (number > 99)
 {
+    while (number > 999)
+    {
+        number = number / 10;
+    }
     int number_t = number % 10;
     Console.WriteLine($"Третья цифра в числе - {number_t}");
 }

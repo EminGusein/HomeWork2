@@ -8,7 +8,7 @@ int Input(string text)
 }
 
 int number = Input("Введите трёхзначное число: ");
-if (number > 99 & number < 1000)
+if (number > 99 && number < 1000)
 {
     int number_s = number / 10 % 10;
     Console.WriteLine(number_s);
